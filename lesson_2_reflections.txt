@@ -3,3 +3,19 @@ It creates a new git repository, but there are no commits.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is a holding place for files that are being worked on.  Once you commit, all the files in the staging area are committed together.  It's helpful when multiple files are logically linked, and may have changes that you want to commit at once (html and css)
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can check the item against the last commit, or what's in the working directory and move things in and out of the staging area to make sure you only commit what you want/what is logical.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you want multiple versions to experiment, but want to keep a copy of your master as well.
+
+How do the diagrams help you visualize the branch structure?
+Diagrams help you understand what is reachable from each branch, where it broke off, and what (if anything) is unreachable.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Anything that's been added from the original file where they branched, and anything that's been removed will be added/removed accordingly.  Anything that's unchanged will be likewise unchanged.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros: makes merging easier
+Cons: there might be a mistake that gets merged
